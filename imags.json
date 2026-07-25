@@ -1,0 +1,15 @@
+imags=[
+    {"id":1 ,"nombre":"El grito","autor":"Edvard Munch","anio":"1893","archivo":"../imagenes/img/img1.jpg"},
+	{"id":2 ,"nombre":"Casas en el Achterzaan","autor":"Claude Monet","anio":"1871","archivo":"../imagenes/img/img2.jpg"},
+	{"id":3 ,"nombre":"Jardín en Sainte-Adresse","autor":"Claude Monet","anio":"1867","archivo":"../imagenes/img/img3.jpg"},
+	{"id":4 ,"nombre":"Bodegón con Manzanas y Jarrónde Prímulas","autor":"Paul Cézanne","anio":"1890","archivo":"../imagenes/img/img4.jpg"},
+	{"id":5 ,"nombre":"Dos damas en la bahia","autor":"Edvardv Munch","anio":"1898","archivo":"../imagenes/img/img5.jpg"},
+	{"id":6 ,"nombre":"Gota en el ojo","autor":"Anónimo","anio":"S.F.","archivo":"../imagenes/img/img6.jpg"},
+	{"id":7 ,"nombre":"Guitarra Roja","autor":"Anónimo","anio":"S.F.","archivo":"../imagenes/img/img7.jpg"},
+	{"id":8 ,"nombre":"Espalda Rasgada","autor":"Anónimo","anio":"S.F.","archivo":"../imagenes/img/img8.jpg"},
+	{"id":9 ,"nombre":"Gato Durmiendo","autor":"Mylene Bresan","anio":"2012","archivo":"../imagenes/img/img9.jpg"},
+	{"id":10 ,"nombre":"Creo que he visto un lindo gatito!","autor":"Lukas Jernas","anio":"2008","archivo":"../imagenes/img/img10.jpg"},
+	{"id":11 ,"nombre":"Ejercicio Piel 1","autor":"Anónimo","anio":"S.F.","archivo":"../imagenes/img/img11.jpg"},
+	{"id":12 ,"nombre":"Ejercicio Piel 2","autor":"Anónimo","anio":"S.F.","archivo":"../imagenes/img/img12.jpg"},
+    {"id":13 ,"nombre":"Ejercicio Piel 3","autor":"Anónimo","anio":"S.F.","archivo":"../imagenes/img/img13.jpg"}
+]

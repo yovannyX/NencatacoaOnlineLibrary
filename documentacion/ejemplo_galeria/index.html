@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8"/>
+<link rel="stylesheet" type="text/css" href="estilos.css" />
+<script type="text/javascript" src="imags.json"></script>
+<script>
+    
+    /*
+    Configuración de las animaciones de cambio de las imágenes
+    animaciones:
+        -"derecha": la imagen entra por la derecha
+        -"izquierda": la imagen entra por la izquierda
+        -"arriba": la imágen entra por arriba
+        -"abajo": la imagen entra por abajo
+        -"opacidad": la imagen cambia de opacidad de 0 a 100%
+        -"crecer": la imagen crece en tamaño
+    Se puede usar una o una combinación de ellas, escribiendolas en la variable "animaciones", sin importar el orden
+    Los tipos "derecha" - "izquierda" y "arriba" - "abajo" son incompatibles para usarlos a la vez
+    Ejemplo: 
+    Para que el cambio se haga solo cambiando la opacidad,
+    var animaciones = ["opacidad"]; 
+    Para que aparezca desde la derecha cambiando además la opacidad
+    var animaciones = ["opacidad","derecha"]; 
+
+    t_anim: Es el tiempo que dura la animación del cambio
+    */
+    var animaciones = ["abajo","crecer","opacidad"];
+    var t_anim = 700;
+        /*Configuración de la acción
+    cambiar var tipo_inter = "mouseenter" si se desea que cambie al ubicar el ratón sobre la imagen
+    */
+    var tipo_inter = "click";//Se puede cambiar por "mouseover" si se desea el cambio cuando se ubique el ratón encima
+    var rep;
+    
+</script>
+<script type="text/javascript" src="src/scripts.js">
+    
+</script>
+<body>
+<div id="ppal">
+        <div id="ampliada">
+            <img id="foco" src=""/>
+            <div id="descr">
+                <!--Tabla con los campos para la descripción-->
+                <table style="border:none;">
+                    <tr><td id="campo1"></td></tr>
+                    <tr><td id="campo2"></td></tr>
+                    <tr><td id="campo3"></td></tr>
+                </table>
+            </div>
+        </div>
+    <div id="marcog">
+        <div id="galeriaatr"><div id="galeria"></div></div>
+        <div class="bmov" id="bder" onmouseover="rep = setInterval(function(){btrans('izq')},100)" onmouseout="clearInterval(rep)">></div>
+        <div class="bmov" id="bizq" onmouseover="rep = setInterval(function(){btrans('der')},100)" onmouseout="clearInterval(rep)"><</div>
+    </div>
+</div>
+<script>
+    prevc = document.getElementById('galeria');
+    foco = document.getElementById('foco');
+    document.getElementById("bder").addEventListener("touchstart",function(){btrans('izq')});//
+    document.getElementById("bizq").addEventListener("touchstart",function(){btrans('der')});//
+    creaprev();
+    prevs = document.getElementsByClassName("imgprev");
+    
+    document.body.onload = function (){
+        //Procedimiento para encontrar el áncho de todas las imágenes de previsualización
+    for (var k = 0; k<prevs.length; k++){
+
+        anchtot = anchtot + prevs[k].width;
+    }}
+</script>
+</body>
+
+</html>
